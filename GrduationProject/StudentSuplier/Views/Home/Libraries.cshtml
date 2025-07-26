@@ -1,0 +1,25 @@
+﻿@model IEnumerable<StudentSuplier.Models.Library>
+
+@{
+    ViewData["Title"] = "المكتبات";
+}
+
+<div class="container py-5">
+    <h2 class="text-center">استعرض المكتبات المتوفرة</h2>
+
+    <div class="row">
+        @foreach (var library in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="@library.ImageUrl" class="card-img-top" alt="@library.LibraryName">
+                    <div class="card-body">
+                        <h5 class="card-title">@library.LibraryName</h5>
+                        <p class="card-text">@library.Location</p>
+                        <a href="#" class="btn btn-success">زيارة المكتبة</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿@model StudentSuplier.Models.LoginViewModel
+
+@{
+    ViewData["Title"] = "Login - تسجيل الدخول";
+    Layout = "~/Views/Shared/_LoginRegisterLayout.cshtml";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/login.css" />
+</head>
+
+
+<div class="container py-5 d-flex justify-content-center">
+    <div class="login-card-wrapper"> <!-- هذا الغلاف للشريط المتحرك -->
+        <div class="login-card">
+            <h2 class="login-header">تسجيل الدخول</h2>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger text-center">@ViewBag.Error</div>
+            }
+
+            <form method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-control" id="password" name="password" required />
+                </div>
+
+                <button type="submit" class="btn login-btn text-white w-100">تسجيل الدخول</button>
+            </form>
+
+            <div class="login-link">
+                <p>ليس لديك حساب؟ <a href="/Account/Register">سجّل الآن</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+

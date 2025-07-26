@@ -1,0 +1,220 @@
+﻿@model StudentSuplier.Models.AddProductsViewModel
+
+@{
+    ViewData["Title"] = "تعديل المنتج";
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+    var productId = ViewBag.ProductId;
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<style>
+    h4 {
+        text-align: center;
+        color: #2b4f81;
+        margin-bottom: 30px;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+        border: solid #004080;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    input.form-control,
+    textarea.form-control {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 15px;
+        transition: border-color 0.3s;
+    }
+
+        input.form-control:focus,
+        textarea.form-control:focus {
+            border-color: #f59e0b;
+            box-shadow: 0 0 6px rgba(245, 158, 11, 0.3);
+            outline: none;
+        }
+
+    .text-danger {
+        font-size: 13px;
+        color: #e63946;
+        margin-top: 5px;
+        display: block;
+    }
+
+    button.btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        transition: background-color 0.3s;
+    }
+
+        button.btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .right-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .img-fluid {
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+
+    .img-preview {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+
+    .upload-label {
+        cursor: pointer;
+        display: block;
+    }
+</style>
+
+<h4>تعديل المنتج</h4>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form asp-action="EditProduct" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="ProductId" />
+
+                <div class="form-group">
+                    <label>اسم المنتج</label>
+                    <input asp-for="ProductName" class="form-control" />
+                    <span asp-validation-for="ProductName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>تصنيف المنتج</label>
+                    <select name="category" class="form-select">
+                        <option value="">جميع التصنيفات</option>
+                        @foreach (var cat in ViewBag.Categories as List<string> ?? new List<string>())
+                        {
+                            <option value="@cat" selected="@(cat == ViewBag.SelectedCategory?.ToString())">
+                                @cat
+                            </option>
+                        }
+                    </select>
+                    <span asp-validation-for="Category" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>السعر</label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>الوصف</label>
+                    <textarea asp-for="Description" class="form-control"> </textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    @if (Model.IsActive == true)
+                    {
+                        <input type="checkbox" name="chk1" value="active" checked />
+                    }
+                    else
+                    {
+                        <input type="checkbox" name="chk1" value="active" checked />
+                    }
+                    <label>المنتج ظاهر في المكتبة</label>
+                    <span asp-validation-for="isactive" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>صورة جديدة (اختياري)</label>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center">
+                            <label for="ProductImage" class="upload-label">
+                                <div class="upload-area">
+                                    <i class="fa fa-cloud-upload fa-3x text-primary"></i>
+                                    <p class="mt-2">انقر هنا لتحميل صورة المنتج</p>
+                                </div>
+                            </label>
+
+                            <input asp-for="ImageUrl" type="file" id="ProductImage" accept="image/*" class="form-control upload-input d-none"/>
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+
+                            <div class="mt-3">
+                                <img id="previewImage" src="#" class="img-preview" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">حفظ التعديلات</button>
+            </form>
+        </div>
+
+
+        <div class="col-lg-6 right-image-container">
+            <img id="mainImage" src="@Model.ImageUrl" class="img-fluid" alt="Product Image" />
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+            document.getElementById('ProductImage').addEventListener('change', function (event) {
+            var input = event.target;
+            var preview = document.getElementById('previewImage');
+            var mainImage = document.getElementById('mainImage'); // 👈 صورة اليمين
+            if (input.files && input.files[0]) {
+                var fileUrl = URL.createObjectURL(input.files[0]);
+                preview.src = fileUrl;
+                preview.style.display = 'block';
+                if (mainImage) {
+                    mainImage.src = fileUrl; // ✅ تحديث صورة اليمين مباشرة
+                }
+            } else {
+                preview.src = "#";
+                preview.style.display = 'none';
+            }
+        });
+
+    </script>
+}
+

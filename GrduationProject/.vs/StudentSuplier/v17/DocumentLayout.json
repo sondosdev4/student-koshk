@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\views\\library\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\views\\library\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\models\\cartlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\models\\cartlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\models\\cartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\models\\cartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|c:\\users\\user\\onedrive\\desktop\\grduationproject\\grduationproject\\studentsuplier\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FEDD981-6EDB-4033-8696-D88771BC9160}|StudentSuplier\\StudentSuplier.csproj|solutionrelative:studentsuplier\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentSuplier\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "StudentSuplier\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAG4BAAAAAAAAAAAAAH4BAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T19:41:33.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Models\\CartListViewModel.cs",
+              "RelativeDocumentMoniker": "StudentSuplier\\Models\\CartListViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Models\\CartListViewModel.cs",
+              "RelativeToolTip": "StudentSuplier\\Models\\CartListViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T19:39:08.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Views\\Library\\Details.cshtml",
+              "RelativeDocumentMoniker": "StudentSuplier\\Views\\Library\\Details.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Views\\Library\\Details.cshtml",
+              "RelativeToolTip": "StudentSuplier\\Views\\Library\\Details.cshtml",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-12T19:35:46.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LibraryController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Controllers\\LibraryController.cs",
+              "RelativeDocumentMoniker": "StudentSuplier\\Controllers\\LibraryController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Controllers\\LibraryController.cs",
+              "RelativeToolTip": "StudentSuplier\\Controllers\\LibraryController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAYwGoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T19:27:25.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CartViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Models\\CartViewModel.cs",
+              "RelativeDocumentMoniker": "StudentSuplier\\Models\\CartViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Models\\CartViewModel.cs",
+              "RelativeToolTip": "StudentSuplier\\Models\\CartViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T19:24:08.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "StudentSuplier\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Controllers\\CartController.cs",
+              "RelativeToolTip": "StudentSuplier\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAFYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T19:12:58.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentSuplier\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\appsettings.json",
+              "RelativeToolTip": "StudentSuplier\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T17:25:54.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Program.cs",
+              "RelativeDocumentMoniker": "StudentSuplier\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\Program.cs",
+              "RelativeToolTip": "StudentSuplier\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T17:25:53.03Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

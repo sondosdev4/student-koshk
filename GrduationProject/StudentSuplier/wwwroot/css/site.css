@@ -1,0 +1,176 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #82b28e;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 15px;
+}
+
+.header-text {
+    color: #004080;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* إضافة مسافة بين العناصر */
+.nav-item {
+    margin-left: 19px; /* يمكنك تعديل الرقم حسب المسافة المطلوبة */
+}
+
+
+
+.logo-container {
+    width: 90px; /* حجم الحاوية */
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-text {
+    font-size: 18px;
+    color: #004080; 
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.btn-firoze {
+    background-color: #82b28e;
+    color: #004080;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* يلغي أي خط تحتي */
+}
+
+    .btn-firoze:hover {
+        color:white;
+        background-color: #004080;
+        text-decoration: none; /* لضمان عدم ظهور خط تحتي عند المرور */
+    }
+
+
+
+
+
+.btn-outline-custom {
+    background-color: #82b28e;
+    color: #004080;
+    border: solid 1px #004080;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    .btn-outline-custom:hover {
+        color: white;
+        background-color: #004080;
+        text-decoration: none;
+    }
+
+
+
+
+.cards-container {
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+
+
+
+.container-main {
+    margin-top: 20px;
+    min-height: calc(100vh - 200px);
+}
+
+
+
+.floating-cart {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f59e0b;
+    color: #004080;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+    .floating-cart:hover {
+        color: #004080;
+        background-color: #e57f35;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+footer {
+    background-color: #82b28e;
+    padding: 30px 0 10px;
+    position: relative;
+    z-index: 998;
+    direction: rtl;
+    text-align: right;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 10px;
+}
+
+    footer h5,
+    footer h3,
+    footer p {
+        color: #004080;
+    }
+
+    footer p {
+        font-size: 17px;
+        text-align: justify;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+#libraries-section {
+    scroll-margin-top: 100px;
+}
+
+

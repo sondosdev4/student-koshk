@@ -1,0 +1,136 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    direction: rtl;
+    text-align: right;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #82b28e;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 15px;
+}
+
+.header-text {
+    color: #004080;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* إضافة مسافة بين العناصر */
+.nav-item {
+    margin-left: 19px; /* يمكنك تعديل الرقم حسب المسافة المطلوبة */
+}
+
+
+
+.logo-container {
+    width: 90px; 
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-text {
+    font-size: 18px;
+    color: #004080;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+/* مسافة بين اسم المستخدم وزر تسجيل الخروج */
+.username-box {
+    background-color: rgba(255, 255, 255, 0.15); /* خلفية بيضاء شبه شفافة */
+    color: #004080;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+    .username-box i {
+        font-size: 16px;
+        margin-left: 6px;
+    }
+
+.user-controls {
+    display: flex;
+    justify-content: flex-end; /* محاذاة العناصر لليمين */
+    align-items: center; /* لمحاذاة العناصر عاموديًا */
+    gap: 15px; /* المسافة بين العناصر */
+    margin-bottom: 10px;
+}
+
+.btn-outline-custom {
+    background-color: #82b28e;
+    color: #004080;
+    border: solid 1px #004080;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    .btn-outline-custom:hover {
+        color: white;
+        background-color: #004080;
+        text-decoration: none;
+    }
+
+
+
+/* المساحة الرئيسية */
+.container-main {
+    margin-top: 20px;
+    min-height: calc(100vh - 200px);
+}
+
+
+
+
+footer {
+    background-color: #82b28e;
+    padding: 30px 0 10px;
+    position: relative;
+    z-index: 998;
+    direction: rtl;
+    text-align: right;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 10px;
+}
+
+    footer h5,
+    footer h3,
+    footer p {
+        color: #004080;
+    }
+
+    footer p {
+        font-size: 17px;
+        text-align: justify;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+

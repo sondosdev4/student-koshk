@@ -1,0 +1,593 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StudentSuplier.bundle.scp.css",
+      "PackagePath": "staticwebassets\\StudentSuplier.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\css\\library.css",
+      "PackagePath": "staticwebassets\\css\\library.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\css\\student.css",
+      "PackagePath": "staticwebassets\\css\\student.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\images\\background.jpeg",
+      "PackagePath": "staticwebassets\\images\\background.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\images\\cash-in-hand.png",
+      "PackagePath": "staticwebassets\\images\\cash-in-hand.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\images\\logo2-removebg-preview.png",
+      "PackagePath": "staticwebassets\\images\\logo2-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\images\\mastercard.png",
+      "PackagePath": "staticwebassets\\images\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\images\\visa.png",
+      "PackagePath": "staticwebassets\\images\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\0ad137f7-3df9-4d2f-aef9-c8bd3a980c99.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\0ad137f7-3df9-4d2f-aef9-c8bd3a980c99.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\0daf1f3e-dfc7-4cf0-ab6b-38ded78b1eb0.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\0daf1f3e-dfc7-4cf0-ab6b-38ded78b1eb0.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\30f27ea6-a01a-4ab1-8549-2128e11a27e1.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\30f27ea6-a01a-4ab1-8549-2128e11a27e1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\34e0895e-5b69-4ea0-bedf-99bb8a6d9453.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\34e0895e-5b69-4ea0-bedf-99bb8a6d9453.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\47f88f2c-06e7-4c5a-8e45-8026e1a0e198.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\47f88f2c-06e7-4c5a-8e45-8026e1a0e198.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\6b823e1a-694a-4e51-9cda-b220685d07d5.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\6b823e1a-694a-4e51-9cda-b220685d07d5.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\7722187f-b644-4e2d-b4fc-3378032a3a4a.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\7722187f-b644-4e2d-b4fc-3378032a3a4a.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\c0b138d2-3f25-49b2-b916-4d91a9c5d0b0.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\c0b138d2-3f25-49b2-b916-4d91a9c5d0b0.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\libraries\\d6686720-e6cf-415f-bd0d-7f4dd7890e28.png",
+      "PackagePath": "staticwebassets\\uploads\\libraries\\d6686720-e6cf-415f-bd0d-7f4dd7890e28.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\1abd0c52-ea81-494c-8cc1-352bf5b3ef04.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\1abd0c52-ea81-494c-8cc1-352bf5b3ef04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\2f6332ea-dedb-44c5-86a2-ebbf0dcd107b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\2f6332ea-dedb-44c5-86a2-ebbf0dcd107b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\474bd898-57d1-4d32-91f1-4aa35b09e7bc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\474bd898-57d1-4d32-91f1-4aa35b09e7bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\50b26387-4ffa-4f6e-a7fe-38f04780eb40.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\50b26387-4ffa-4f6e-a7fe-38f04780eb40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\64e26b93-af30-4186-9dc5-738ddc9002cd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\64e26b93-af30-4186-9dc5-738ddc9002cd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\812b04a7-fb03-41e6-b216-a0ab98f27b05.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\812b04a7-fb03-41e6-b216-a0ab98f27b05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.39 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.39 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.39 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.39 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM (3).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM (3).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.40 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.41 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.41 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM (3).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM (3).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.42 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.43 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.43 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.43 PM (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.43 PM (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.43 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.43 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.44 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.44 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.48 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.48 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.48 PM (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.48 PM (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.49 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.49 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.49 PM (3).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.49 PM (3).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.50 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 1.58.50 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 2.03.04 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 2.03.04 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 2.05.33 PM - Copy.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 2.05.33 PM - Copy.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 2.08.18 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 2.08.18 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.08.59 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.08.59 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.01 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.01 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.02 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.02 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.03 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.03 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.06 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.06 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.07 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.07 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.07 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.07 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.08 PM (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.08 PM (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.08 PM (3).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 3.09.08 PM (3).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.24.06 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.24.06 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.24.07 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.24.07 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.25.12 PM (1).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.25.12 PM (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.25.12 PM (2).jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.25.12 PM (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.25.12 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.25.12 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.31.52 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.31.52 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.31.55 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.31.55 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.35.05 PM.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\products\\WhatsApp Image 2025-06-12 at 5.35.05 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\aa7f7e96-e354-4aa1-b3f5-886041a8a053.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\aa7f7e96-e354-4aa1-b3f5-886041a8a053.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\bag.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\bag.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\cc015f5e-813e-4d40-b9c5-adc722ed57f1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\cc015f5e-813e-4d40-b9c5-adc722ed57f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\d0bd9821-f056-4254-98fd-bfe4b72995f7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\d0bd9821-f056-4254-98fd-bfe4b72995f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\download (1).jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\download (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\download.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\download.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\ed5e1218-6427-47d8-9d19-fbb45b4b62e2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\ed5e1218-6427-47d8-9d19-fbb45b4b62e2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\img1.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\img1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\img2.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\img2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\img3.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\img3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\img4.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\img4.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\img5.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\img5.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\img6.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\img6.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\ادوات سحب عصب.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\ادوات سحب عصب.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\حقيبة مدرسية.jpg",
+      "PackagePath": "staticwebassets\\uploads\\products\\حقيبة مدرسية.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\OneDrive\\Desktop\\GrduationProject\\GrduationProject\\StudentSuplier\\wwwroot\\uploads\\products\\مجسم اسنان.webp",
+      "PackagePath": "staticwebassets\\uploads\\products\\مجسم اسنان.webp"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StudentSuplier.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.StudentSuplier.props",
+      "PackagePath": "build\\StudentSuplier.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.StudentSuplier.props",
+      "PackagePath": "buildMultiTargeting\\StudentSuplier.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.StudentSuplier.props",
+      "PackagePath": "buildTransitive\\StudentSuplier.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

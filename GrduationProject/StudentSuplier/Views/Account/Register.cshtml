@@ -1,0 +1,63 @@
+﻿@model StudentSuplier.Models.RegisterViewModel
+
+@{
+    ViewData["Title"] = "إنشاء حساب جديد - Register";
+    Layout = "~/Views/Shared/_LoginRegisterLayout.cshtml";
+}
+
+
+<head>
+    <link rel="stylesheet" href="~/css/register.css" />
+</head>
+
+
+<div class="container py-5 d-flex justify-content-center">
+    <div class="register-card-wrapper">
+        <div class="register-card">
+
+            <h2 class="register-header">تسجيل حساب جديد</h2>
+
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-success text-center">@ViewBag.Message</div>
+            }
+
+            <form asp-action="Register" method="post">
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">الاسم الكامل</label>
+                    <input type="text" class="form-control" id="name" name="fullName" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                    <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">كلمة المرور</label>
+                    <input type="password" class="form-control" id="password" name="password" required />
+                </div>
+                <div class="mb-3 text-end">
+                    <label class="form-label d-block">نوع المستخدم:</label>
+
+                    <div style="color:#004080">
+                        <input class="form-check-input" type="radio" name="UserType" id="student" checked  value="الطالب" required />
+                        &nbsp;
+                        <label class="form-check-label" for="student">الطالب</label>
+                    </div>
+                    <div style="color:#004080">
+                        <input class="form-check-input" type="radio" name="UserType" id="libraryOwner" value="صاحب المكتبة" required />
+                        &nbsp;
+                        <label class="form-check-label" for="libraryOwner">صاحب المكتبة</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn register-btn text-white w-100">إنشاء حساب</button>
+            </form>
+
+            <div class="register-link">
+                <p>لديك حساب بالفعل؟ <a href="/Account/Login">سجّل الدخول</a></p>
+            </div>
+        </div>
+    </div>
+</div>

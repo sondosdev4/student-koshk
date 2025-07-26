@@ -1,0 +1,225 @@
+﻿@model  StudentSuplier.Models.LibraryDetailViewModel
+
+@{
+    ViewData["Title"] = "منتجات المكتبة";
+    string Category = "xyz";
+    if (ViewBag.userName != null)
+    {
+        ViewData["UserName"] = ViewBag.userName;
+        Layout = "~/Views/Shared/_StudentLayout.cshtml";
+        ViewData["count"] = ViewBag.cart;
+    }
+    else
+        Layout = "_Layout";
+}
+
+<style>
+    .product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+   }
+
+
+    .product-card img {
+    height: 180px;
+    object-fit: cover;
+    }
+
+    .product-card .card-body {
+    text-align: center;
+    }
+
+    .product-card .btn {
+            background-color: #82b28e;
+            border-radius: 8px;
+            padding: 8px 16px;
+            width: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+
+    .search-barr {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    }
+
+    .search-barr .input-group {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    }
+
+    .search-barr input[type="text"] {
+    border: none;
+    padding: 10px 15px;
+    font-size: 15px;
+    flex: 1;
+    outline: none;
+    }
+
+    .search-barr .btn {
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    }
+
+    .search-barr .btn:hover {
+    background-color: #e57f35;
+    }
+
+    .quantity-input input[type="number"] {
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+        .quantity-input input[type="number"]:focus {
+            border-color: #82b28e;
+            outline: none;
+        }
+
+</style>
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">@Model.LibraryName</h2>
+    <p class="text-center text-muted">🕒 @Model.WorkingHour</p>
+    <p class="text-center text-muted">📍 @Model.Location</p>
+    <p class="text-center">📞 @Model.Phone</p>
+    
+
+    <hr />
+
+    <!-- مربع البحث  -->
+    <div class="search-barr">
+        <form method="get" asp-action="Details" asp-controller="Library">
+            <input type="hidden" name="id" value="@Model.LibraryId" />
+            <div class="input-group">
+                <input type="text" name="search" class="form-control" placeholder="ابحث عن منتج..." value="@ViewBag.Search" />
+                <button class="btn" type="submit">🔍</button>
+            </div>
+        </form>
+    </div>
+
+    <h4 class="mb-3">المنتجات المتوفرة:</h4>
+    
+    @foreach (var group in Model.Products.GroupBy(p => p.Category))
+    {
+        <h5 class="mt-4">@group.Key</h5>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            @foreach (var product in group)
+            {
+                <div class="col">
+                    <div class="card product-card">
+                        <img src="@product.ImageUrl" class="card-img-top" alt="@product.ProductName" />
+                        <div class="card-body">
+                            <h5 class="card-title">@product.ProductName</h5>
+                            <p class="card-text text-muted">@product.Description</p>
+                            <p class="card-text">السعر: @product.Price د.أ</p>
+                            <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                                <input type="hidden" name="productId" value="@product.ProductId" />
+                                <input type="hidden" name="productName" value="@product.ProductName" />
+                                <input type="hidden" name="price" value="@product.Price" />
+                                <input type="hidden" name="libraryid" value="@product.LibraryId" />
+
+                                <div class="iinput-group quantity-input" style="width: 100px;">
+                                    <input type="number" name="quantity" class="form-control text-center" min="1" value="1" />
+                                </div>
+
+                                <button type="button" class="btn add-to-cart w-100" style="max-width: 100px;"
+                                        data-id="@product.ProductId"
+                                        data-name="@product.ProductName"
+                                        data-price="@product.Price"
+                                        data-libraryid="@product.LibraryId">
+                                    🛒 شراء
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+}
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".add-to-cart").click(function(e) {
+        e.preventDefault();
+
+        var button = $(this);
+        var form = button.closest("form");
+
+        var data = form.serialize();
+
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("AddToCart", "Cart")',
+            data: data,
+            success: function(response) {
+                if (response.success) {
+                    // استدعاء الدالة للحصول على العدد الجديد للسلة
+                    $.getJSON('@Url.Action("GetCartCount", "Cart")', function(data) {
+                        $("#cart-count").text(data.count);
+                    });
+
+                    // عرض رسالة النجاح مؤقتًا
+                    let msg = $("<div>")
+                        .text(response.message)
+                        .css({
+                                "background-color": "#82b28e",
+                                "color": "white",
+                                "padding": "10px",
+                                "border-radius": "5px",
+                                "position": "fixed",
+                                "bottom": "80px",   
+                                "left": "20px",
+                                "z-index": "9999",
+                                "box-shadow": "0 2px 5px rgba(0,0,0,0.3)"
+                        })
+                        .appendTo("body");
+
+                    setTimeout(function() {
+                        msg.fadeOut(500, function() { $(this).remove(); });
+                    }, 3000);
+
+                } else if (response.redirectUrl) {
+                    window.location.href = response.redirectUrl;
+                } else {
+                    alert("حدث خطأ: " + response.message);
+                }
+            },
+            error: function() {
+                alert("حدث خطأ أثناء إضافة المنتج إلى السلة.");
+            }
+        });
+
+            // بعد نجاح الإضافة:
+    $.ajax({
+        url: '/Cart/GetCartCount', // هذا هو الأكشن الذي يرجع عدد المنتجات في السلة
+        type: 'GET',
+        success: function (data) {
+            $('#cart-count').text(data.count); // يحدث الرقم داخل السلة
+        }
+    });
+
+    });
+});
+</script>

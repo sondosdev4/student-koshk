@@ -1,0 +1,206 @@
+﻿@model StudentSuplier.Models.LibraryViewModel 
+
+@{
+    ViewData["Title"] =  Model.Library_id > 0 ? "تعديل بيانات المكتبة" : "إضافة مكتبة جديدة";
+    ViewData["UserName"] = ViewBag.username;
+    Layout = "~/Views/Shared/_LibraryLayout.cshtml";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<style>
+    h4 {
+        text-align: center;
+        color: #004080;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    form {
+        background-color: #ffffff;
+        padding: 35px;
+        max-width: 650px;
+        margin: 0 auto;
+        border:solid #004080;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+        direction: rtl;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: 600;
+        color: #004080;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input.form-control {
+        border: 2px solid #d0d7e1;
+        border-radius: 10px;
+        padding: 12px 15px;
+        font-size: 15px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+        width: 100%;
+    }
+
+        input.form-control:focus {
+            border-color: #f59e0b;
+            box-shadow: 0 0 6px rgba(245, 158, 11, 0.3);
+            outline: none;
+        }
+
+    .text-danger {
+        font-size: 13px;
+        color: #e63946;
+        margin-top: 5px;
+        display: block;
+    }
+
+    button.btn-primary {
+        background-color: #007bff;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        transition: background-color 0.3s;
+    }
+
+        button.btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+
+    .right-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* يأخذ طول العنصر الأب */
+    padding: 20px;
+}
+
+    .img-fluid {
+        width: 600px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+
+    .img-preview {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .upload-label {
+        cursor: pointer;
+        display: block;
+    }
+
+</style>
+
+<h4>@(Model.Library_id > 0 ? "تعديل المكتبة" : "إضافة مكتبة")</h4>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form asp-action="SetupLibrary" enctype="multipart/form-data" method="post" id="libraryForm" novalidate>
+                <div class="form-group">
+                    <label>اسم المكتبة</label>
+                    <input asp-for="LibraryName" class="form-control" required />
+                    <span asp-validation-for="LibraryName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>الموقع</label>
+                    <input asp-for="Location" class="form-control" required />
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>رقم الهاتف</label>
+                    <input asp-for="Phone" class="form-control" required />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>ساعات العمل</label>
+                    <input asp-for="WorkingHours" class="form-control" required />
+                    <span asp-validation-for="WorkingHours" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>صورة المكتبة</label>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center">
+                            <label for="ImageUrl" class="upload-label">
+                                <div class="upload-area">
+                                    <i class="fa fa-cloud-upload fa-3x text-primary"></i>
+                                    <p class="mt-2">انقر هنا لتحميل صورة المكتبة</p>
+                                </div>
+                            </label>
+
+                            <input asp-for="ImageUrl" id="ImageUrl" type="file" class="form-control upload-input d-none" accept="image/*" required />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+
+
+                            <div class="mt-3">
+                                <img id="previewImage" src="#" class="img-preview" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="submitButton">
+                    @(Model.Library_id == 0 ? "التالي" : "تحديث البيانات")
+                </button>
+
+            </form>
+        </div>
+
+        <div class="col-lg-6 right-image-container">
+            <img id="mainImage" src="@Model.ImageUrl" class="img-fluid" alt="Product Image" />
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+               document.getElementById('ImageUrl').addEventListener('change', function (event) {
+            var input = event.target;
+            var preview = document.getElementById('previewImage');
+            var mainImage = document.getElementById('mainImage'); // 👈 صورة اليمين
+            if (input.files && input.files[0]) {
+                var fileUrl = URL.createObjectURL(input.files[0]);
+                preview.src = fileUrl;
+                preview.style.display = 'block';
+                if (mainImage) {
+                    mainImage.src = fileUrl; // ✅ تحديث صورة اليمين مباشرة
+                }
+            } else {
+                preview.src = "#";
+                preview.style.display = 'none';
+            }
+        });
+
+    </script>
+}
+

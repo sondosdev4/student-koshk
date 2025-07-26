@@ -1,0 +1,416 @@
+﻿@model CartListViewModel
+
+@{
+    ViewData["Title"] = " سلة المشتريات";
+
+    if (ViewBag.userName != null)
+    {
+        ViewData["UserName"] = ViewBag.userName;
+        Layout = "~/Views/Shared/_StudentLayout.cshtml";
+    }
+    else
+        Layout = "_Layout";
+}
+
+<style>
+
+    h2, th ,h4{
+        color: #004080;
+    }
+
+    .card:hover {
+        border-color: #0d6efd;
+        cursor: pointer;
+        transform: scale(1.02);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .pay-btn {
+        background-color: #004080;
+        color: white;
+        width: 100px;
+        height: 50px;
+        border: 1px bold #004080;
+        border-radius: 7px;
+    }
+
+    .pay-btn:hover {
+            background-color: white;
+            color: #004080;
+
+        }
+
+    .product-card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+
+
+        .product-card img {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .product-card .card-body {
+            text-align: center;
+        }
+
+        .product-card .btn {
+            background-color: #82b28e;
+            border-radius: 8px;
+            padding: 8px 16px;
+            width: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+
+    .search-barr {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+        .search-barr .input-group {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 0.6rem;
+            overflow: hidden;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .search-barr input[type="text"] {
+            border: none;
+            padding: 10px 15px;
+            font-size: 15px;
+            flex: 1;
+            outline: none;
+        }
+
+        .search-barr .btn {
+            background-color: #f59e0b;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+            .search-barr .btn:hover {
+                background-color: #e57f35;
+            }
+
+    .quantity-input input[type="number"] {
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+        .quantity-input input[type="number"]:focus {
+            border-color: #82b28e;
+            outline: none;
+        }
+
+</style>
+
+
+<body>
+    <h2>🛒 سلة المشتريات</h2>
+
+    <table class="table text-center align-middle mt-4">
+        <thead class="table-light">
+            <tr class="fw-semibold">
+                <th> المنتج</th>
+                <th> الكمية</th>
+                <th> السعر</th>
+                <th> الإجمالي</th>
+                <th> حذف</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.carts.Any())
+            {
+                foreach (var item in Model.carts)
+                {
+                    <tr>
+                        <td>@item.ProductName</td> 
+                        <td>@item.Quantity</td>
+                        <td>@($"{item.Price:N2} د.أ")</td>
+                        <td>@($"{item.Quantity * item.Price:N2} د.أ")</td>
+                        <td>
+                            <form method="post" asp-action="RemoveFromCart" asp-controller="Cart" onsubmit="return confirmDelete()">
+                                <input type="hidden" name="productId" value="@item.CartItemId" />
+                                <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal" onclick="setProductIdToDelete('@item.CartItemId')">
+                                    حذف
+                                </button>
+                            </form>
+
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-muted py-4">السلة فارغة حالياً.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <h4 class="text-end fw-bold me-3">
+        المجموع الكلي: @($"{Model.carts.Sum(x => x.Price * x.Quantity):N2} د.أ")
+    </h4>
+
+    <hr />
+
+
+
+
+
+
+    <!-- 🗑️ نافذة تأكيد الحذف -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="deleteModalLabel">تأكيد الحذف</h5>
+                </div>
+
+                <div class="modal-body text-center">
+                    <p class="fs-5">هل أنت متأكد من حذف هذا المنتج من السلة؟</p>
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <form method="post" asp-action="RemoveFromCart" asp-controller="Cart">
+                        <input type="hidden" id="productIdToDelete" name="productId" />
+                        <button type="submit" class="btn btn-danger">نعم، احذف</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ✅ نموذج الدفع -->
+    <form id="paymentForm">
+        <button type="button" class="pay-btn " data-bs-toggle="modal" data-bs-target="#paymentModal">
+            تأكيد الدفع
+        </button>
+    </form>
+
+    <!-- نافذة الدفع -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content p-4">
+
+                <!-- زر الإغلاق -->
+                <div class="modal-header justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- 🧾 نموذج خيارات الدفع -->
+                    <form method="post" asp-controller="Checkout" asp-action="ProcessPayment" onsubmit="return validatePaymentMethod()">
+
+                        <div class="text-center mb-4">
+                            <h5 class="modal-title fw-bold" id="paymentModalLabel">اختر طريقة الدفع</h5>
+                        </div>
+
+                        <div class="row g-3 text-center">
+
+                            <!-- كاش -->
+                            <div class="col-md-6">
+                                <div class="card h-100 p-3 shadow-sm border-primary">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" value="Cash" id="cashOption" required>
+                                        <label class="form-check-label fw-bold" for="cashOption">الدفع كاش</label>
+                                    </div>
+                                    <img src="~/images/cash-in-hand.png" class="mx-auto d-block mt-2" width="80" alt="Cash">
+                                </div>
+                            </div>
+
+                            <!-- بطاقة -->
+                            <div class="col-md-6">
+                                <div class="card h-100 p-3 shadow-sm border-primary">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" value="Card" id="cardOption" required>
+                                        <label class="form-check-label fw-bold" for="cardOption">بطاقة ائتمان</label>
+                                    </div>
+                                    <div class="d-flex justify-content-center mt-2">
+                                        <img src="~/images/visa.png" class="me-1" />
+                                        <img src="~/images/mastercard.png" class="me-1" />
+                                        <img src="~/images/amex.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- المجموع -->
+                        <div class="text-center mt-4">
+                            <div class="alert alert-info d-inline-block px-4 py-2 fw-bold" role="alert">
+                                المجموع الكلي: @($"{Model.carts.Sum(x => x.Price * x.Quantity):N2} د.أ")
+                            </div>
+                        </div>
+
+                        <!-- زر الدفع -->
+                        <div class="text-center mt-3">
+                            <button type="submit" class="pay-btn">ادفع الآن</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <h4 class=" mt-4 mb-3">المنتجات المقترحة :</h4>
+
+    @foreach (var group in Model.products.GroupBy(p => p.Category))
+    {
+        <h5 class="mt-4">@group.Key</h5>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            @foreach (var product in group)
+            {
+                <div class="col">
+                    <div class="card product-card">
+                        <img src="@product.ImageUrl" class="card-img-top" alt="@product.ProductName" />
+                        <div class="card-body">
+                            <h5 class="card-title">@product.ProductName</h5>
+                            <p class="card-text text-muted">@product.Description</p>
+                            <p class="card-text">السعر: @product.Price د.أ</p>
+                            <form asp-controller="Cart" asp-action="AddToCart" method="post" class="d-flex align-items-center justify-content-center gap-2 mt-3">
+                                <input type="hidden" name="productId" value="@product.ProductId" />
+                                <input type="hidden" name="productName" value="@product.ProductName" />
+                                <input type="hidden" name="price" value="@product.Price" />
+                                <input type="hidden" name="libraryid" value="@product.LibraryId" />
+
+                                <div class="iinput-group quantity-input" style="width: 100px;">
+                                    <input type="number" name="quantity" class="form-control text-center" min="1" value="1" />
+                                </div>
+
+                                <button type="button" class="btn add-to-cart w-100" style="max-width: 100px;"
+                                        data-id="@product.ProductId"
+                                        data-name="@product.ProductName"
+                                        data-price="@product.Price"
+                                        data-libraryid="@product.LibraryId">
+                                    🛒 شراء
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+
+
+    <!-- ✅ جافاسكربت التحقق -->
+    <script>
+        function validatePaymentMethod() {
+            const selected = document.querySelector('input[name="paymentMethod"]:checked');
+            if (!selected) {
+                alert("يرجى اختيار طريقة الدفع قبل المتابعة.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+
+
+        $(document).ready(function() {
+            $(".add-to-cart").click(function(e) {
+                e.preventDefault();
+
+                var button = $(this);
+                var form = button.closest("form");
+
+                var data = form.serialize();
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("AddToCart", "Cart")',
+                    data: data,
+                    success: function(response) {
+                        if (response.success) {
+                            // استدعاء الدالة للحصول على العدد الجديد للسلة
+                            $.getJSON('@Url.Action("GetCartCount", "Cart")', function(data) {
+                                $("#cart-count").text(data.count);
+                            });
+
+                            // عرض رسالة النجاح مؤقتًا
+                            let msg = $("<div>")
+                                .text(response.message)
+                                .css({
+                                        "background-color": "#82b28e",
+                                        "color": "white",
+                                        "padding": "10px",
+                                        "border-radius": "5px",
+                                        "position": "fixed",
+                                        "bottom": "80px",
+                                        "left": "20px",
+                                        "z-index": "9999",
+                                        "box-shadow": "0 2px 5px rgba(0,0,0,0.3)"
+                                })
+                                .appendTo("body");
+                                  window.location.reload();
+                            setTimeout(function() {
+                                msg.fadeOut(500, function() { $(this).remove(); });
+                            }, 3000);
+
+                        } else if (response.redirectUrl) {
+                            window.location.href = response.redirectUrl;
+                        } else {
+                            alert("حدث خطأ: " + response.message);
+                        }
+                    },
+                    error: function() {
+                        alert("حدث خطأ أثناء إضافة المنتج إلى السلة.");
+                    }
+                });
+
+                    // بعد نجاح الإضافة:
+            $.ajax({
+                url: '/Cart/GetCartCount', // هذا هو الأكشن الذي يرجع عدد المنتجات في السلة
+                type: 'GET',
+                success: function (data) {
+                    $('#cart-count').text(data.count); // يحدث الرقم داخل السلة
+                }
+            });
+
+            });
+        });
+    
+
+        function setProductIdToDelete(productId) {
+            document.getElementById('productIdToDelete').value = productId;
+        }
+    </script>
+
+
+</body>
